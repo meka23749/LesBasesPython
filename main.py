@@ -1,2 +1,1 @@
-print("hallo World")
-print("fredy")
+print("good")
