@@ -1,4 +1,4 @@
-pizzas = [("4 fromages", 10.99), ("vegetarienne", 7.99), ("hawai", 5.99), ("calzone", 2.30)]
+"""pizzas = [("4 fromages", 10.99), ("vegetarienne", 7.99), ("hawai", 5.99), ("calzone", 2.30)]
 
 def afficher(pizzas, nombre_pizza=0):
     print()
@@ -29,5 +29,8 @@ afficher(pizzas,3)
 #vide = ()
 ajouter_pizza_utilisateur(pizzas)
 afficher(pizzas)
-afficher(pizzas, 3)
-        
+afficher(pizzas, 3)"""
+
+
+personnes = {'steve':(28, 170, "Etudiant"), 'lione':(45, 170, "ingenieur"), 'paul':(35, 190, "Medecin")}
+print(personnes['steve'][0], "ans", personnes['steve'][1], "m", personnes['steve'][2])
