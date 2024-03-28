@@ -15,22 +15,23 @@
 #
 # 4 questions
 
-def poser_question(question, r1, r2, r3, r4, choix_bonne_reponse):
+def poser_question(question):
     global score
-    print("QUESTION")
-    print("  " + question)
-    print("  (a)", r1)
-    print("  (b)", r2)
-    print("  (c)", r3)
-    print("  (d)", r4)
+    print(question[0])
+    #print("  " + question)
+    for i in range (0, len(question[1])):
+        print(i+1, question[1][i])
+    #print("  (b)", question[1][1])
+    #print("  (c)", question[1][2])
+    #print("  (d)", question[1][3])
     print()
-    reponse = input("Votre réponse : ")
-    if reponse == choix_bonne_reponse:
+    reponse = input("Votre réponse ( 1 entre et " + str(len(question[1])) + ") : ")
+    reponse_int = int(reponse)
+    if reponse.lower()  == question[2].lower() or question[1][reponse_int-1] == question[2]:
         print("Bonne réponse")
         score += 1
     else:
-        print("Mauvaise réponse")
-        
+        print("Mauvaise réponse")   
     print()
 
 
